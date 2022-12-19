@@ -1,0 +1,33 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-3">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <form [formGroup] ="updatepostForm">
+                        <div class="form-group">
+                            <label for="title">
+                                <strong>Title</strong>
+                            </label>
+                            <input type="text"  id="title" class="form-control" formControlName="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="post">
+                                <strong>Post</strong>
+                            </label>
+                            <input type="text"  id="post" class="form-control" formControlName="body">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-dark mr-3" type="button" *ngIf="submitBtnFlag" [disabled]="updatepostForm.invalid">Create Post</button>
+                            <button class="btn btn-dark" type="button"  *ngIf="submitBtnFlag" (click)=" onupDateForm()">Update Post</button>
+                        </div>
+                       
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{updatepostForm.value | json}}

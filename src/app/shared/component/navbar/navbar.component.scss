@@ -1,0 +1,27 @@
+
+.nav-link{
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    // color: rgba(0,0,0,.9);
+   color: orange;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+// .line::after{
+//     content: '';
+//     width: 0px;
+//     height: 4px;
+//     background-color: orange;
+//     position: absolute;
+//     bottom: -10px;
+//     left: 10px;
+//     transition: all .5s;
+// }
+
+// .line:hover::after{
+//     width: 100%;
+// }
